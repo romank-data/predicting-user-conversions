@@ -15,7 +15,7 @@ uvicorn main:app --reload
 ## 🗿 Тестирование модели
 
 Для тестирования модели можно воспользоваться двумя вариантами:
-- Готовым файлом для тестирования **Проверка работы модели.ipynb**
+- Готовым файлом для тестирования **conversion-score-git.ipynb**
 - Перейти в Swagger (обычно это http://127.0.0.1:8000/docs на локальном компьютере) и протестировать с помощью вызова модуля predict
 
 ## 😋 Шаблон входных данных и результата работы модели
@@ -24,19 +24,25 @@ uvicorn main:app --reload
 
 ```json
 {
-  "utm_source": "fDLlAcSmythWSCVMvqvL",
-  "utm_medium": "(none)",
-  "utm_campaign": "LTuZkdKfxRGVceoWkVyg",
-  "utm_adcontent": "JNHcPlZPxEMWDnRiyoBf",
-  "utm_keyword": "puhZPIYqKXeFPaUviSjo",
-  "device_category": "mobile",
-  "device_os": "iOS",
-  "device_brand": "Xiaomi",
-  "device_model": "iPhone",
-  "device_screen_resolution": "360x720",
-  "device_browser": "Chrome",
-  "geo_country": "Russia",
-  "geo_city": "Moscow"
+"utm_source": "dGlVSdmIlgWDyOPjfwwy",
+"utm_medium": "partner",
+"utm_campaign": "LTuZkdKfxRGVceoWkVyg",
+"utm_adcontent": "JNHcPlZPxEMWDnRiyoBf",
+"utm_keyword": "puhZPIYqKXeFPaUviSjo",
+"device_category": "mobile",
+"device_os": "Android",
+"device_brand": "Samsung",
+"device_browser": "YaBrowser",
+"is_target_action": 0,
+"hour": 0,
+"dayofweek": 5,
+"is_weekend": 1,
+"device_width": 360,
+"device_height": 800,
+"is_organic": 0,
+"from_social": 0,
+"is_russia": 1,
+"is_moscow_spb": 1
 }
 ```
 
