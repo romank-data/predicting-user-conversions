@@ -89,8 +89,8 @@ def load_json(filepath):
 
 # Получение предсказаний
 def predict_on_data(model, data, threshold=0.05):
-    predictions = model.predict_proba(data)[:, 1]  # Берем вероятности класса 1
-    binary_predictions = (predictions > threshold).astype(int)  # Применяем порог 0.2
+    predictions = model.predict_proba(data)[:, 1]
+    binary_predictions = (predictions > threshold).astype(int)
 
     print(f"1 in preds: {binary_predictions.sum()} из {len(binary_predictions)}")
 
